@@ -38,43 +38,63 @@ public class Product {
 	private Category category;
 	
 	public Product() {}
-	public Product(int id, int categoryId, String productName, double unitPrice, short unitInStock,
-			String quantityPerUnit) {
+
+	public Product(int id, String productName, double unitPrice, short unitInStock, String quantityPerUnit,
+			Category category) {
 		super();
 		this.id = id;
 		this.productName = productName;
 		this.unitPrice = unitPrice;
 		this.unitInStock = unitInStock;
 		this.quantityPerUnit = quantityPerUnit;
+		this.category = category;
 	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getProductName() {
 		return productName;
 	}
+
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
+
 	public double getUnitPrice() {
 		return unitPrice;
 	}
+
 	public void setUnitPrice(double unitPrice) {
 		this.unitPrice = unitPrice;
 	}
+
 	public short getUnitInStock() {
 		return unitInStock;
 	}
+
 	public void setUnitInStock(short unitInStock) {
 		this.unitInStock = unitInStock;
 	}
+
 	public String getQuantityPerUnit() {
 		return quantityPerUnit;
 	}
+
 	public void setQuantityPerUnit(String quantityPerUnit) {
 		this.quantityPerUnit = quantityPerUnit;
+	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
 	}
 }

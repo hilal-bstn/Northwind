@@ -33,4 +33,3 @@ public interface ProductDao	extends JpaRepository<Product,Integer> {
 	
 	  //Sql sorgusu: Select p.product_id,p.product_name,c.category_name from product p inner join category c on p.category_id=c.category_id
 }
- 
